@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimento : MonoBehaviour
+public class MovimentoTeste : MonoBehaviour
 {
     public float y = 5.0f;
     public GameObject prefabmeteoro;
@@ -39,8 +39,9 @@ public class Movimento : MonoBehaviour
             //transform.position = transform.position + new Vector3(5.0f * Time.deltaTime, 0.0f, 0.0f);
             transform.position += new Vector3(5.0f * Time.deltaTime, 0.0f, 0.0f);
         }
+        //spawna objeto no mapa
         if (Input.GetKeyDown(KeyCode.Space))
-        {               //objeto, posição, rotação
+        {               //objeto,       posição,                       rotação
             Instantiate(prefabmeteoro, new Vector3 (3.0f, 3.0f, 0.0f), Quaternion.identity);
         }
     }
