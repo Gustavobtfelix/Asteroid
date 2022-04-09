@@ -206,11 +206,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1993710838 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3219018042449736250, guid: 682f0db23fa7dcf4788fa508f73eeb54, type: 3}
-  m_PrefabInstance: {fileID: 3219018042175500096}
+--- !u!1 &1667189039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1667189041}
+  - component: {fileID: 1667189040}
+  m_Layer: 0
+  m_Name: WaveSurge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1667189040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667189039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22dfc908fb70da641aad32fbdb28accc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabAsteroid: {fileID: 1907401983603270234, guid: 376a53a0efe002748ba3c7ccfe1e7d9e, type: 3}
+  quantidadeAsteroides: 4
+--- !u!4 &1667189041
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667189039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.66, y: 1.76, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3219018042175500096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -228,11 +268,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3219018042449736248, guid: 682f0db23fa7dcf4788fa508f73eeb54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.97
+      value: 7.16
       objectReference: {fileID: 0}
     - target: {fileID: 3219018042449736248, guid: 682f0db23fa7dcf4788fa508f73eeb54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.37
+      value: -3.17
       objectReference: {fileID: 0}
     - target: {fileID: 3219018042449736248, guid: 682f0db23fa7dcf4788fa508f73eeb54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -266,9 +306,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -183.938
       objectReference: {fileID: 0}
-    - target: {fileID: 7285496886880863082, guid: 682f0db23fa7dcf4788fa508f73eeb54, type: 3}
-      propertyPath: jogadorRb
-      value: 
-      objectReference: {fileID: 1993710838}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 682f0db23fa7dcf4788fa508f73eeb54, type: 3}

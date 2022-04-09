@@ -144,3 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d08520af1d0f4c4b8ebb16d7bac3db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aceleracao: 5
+  rotacao: 180
+  velocidadeMax: 10
+  velocidadeMin: 0
+  jogadorRb: {fileID: 3219018042449736250}
