@@ -9,14 +9,26 @@ public class PlayerBehavior : MonoBehaviour
     public float velocidadeMax = 10.0f;
 
     public float velocidadeMin = 0.0f;
-    Vector3 inicial = new Vector3 (0.0f, 0.0f, 0.0f);
+    Vector3 inicial = new Vector3 (0.0f, -4.0f, 0.0f);
 
     public Rigidbody2D jogadorRb;
+    public Rigidbody2D prefabProjetil;
+    public Rigidbody2D posicaobala;
+    public float velocidadeProjetil = -3.0f;
 
 
     void Start()
     {
-        //transform.position = inicial;
+        transform.position = inicial;
+    }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Rigidbody2D projetil = Instantiate(prefabProjetil, jogadorRb.position, Quaternion.identity);
+            projetil.velocity = transform.up * velocidadeProjetil;
+        }
     }
 
         //Fixed bloqueia a alteração pelo unity
@@ -51,5 +63,11 @@ public class PlayerBehavior : MonoBehaviour
             transform.position = transform.position + new Vector3(0.0f,  0.0f, 0.0f);
             //jogadorRb.velocity = Vector2.ClampMagnitude(jogadorRb.velocity, velocidadeMin);//velocidade atual com o limite de velocidade
         }
+    }
+
+    void OnTriggerEnter2D (Collider2D outro)
+    {
+        Destroy(gameObject);
+        Debug.Log("F");
     }
 }
