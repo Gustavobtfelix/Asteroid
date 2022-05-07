@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidRB: {fileID: -2285991672683649645}
   velocidadeMaxima: 1
+  projetil: {fileID: 248401241060823549, guid: 64f8560773b6eec449f4954322784886, type: 3}
 --- !u!82 &6471040627705959607
 AudioSource:
   m_ObjectHideFlags: 0
