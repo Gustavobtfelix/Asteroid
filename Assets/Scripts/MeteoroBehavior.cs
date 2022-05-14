@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MeteoroBehavior : MonoBehaviour
 {
+    public static System.Action EventoAsteroideDestruido = null;
+
     public Rigidbody2D asteroidRB;
     public MeteoroBehavior AsteroideMenor;
     public float velocidadeMaxima = 1.0f;
@@ -25,6 +27,10 @@ public class MeteoroBehavior : MonoBehaviour
         for(int i = 0; i < quantidadeFragmentos; i++)
         {
             Instantiate(AsteroideMenor, asteroidRB.position, Quaternion.identity);
+        }
+        if (EventoAsteroideDestruido != null)
+        {
+            EventoAsteroideDestruido();
         }
     }
 }
