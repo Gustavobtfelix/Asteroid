@@ -13,7 +13,6 @@ public class PlayerBehavior : MonoBehaviour
 
     public Rigidbody2D jogadorRb;
     public Rigidbody2D prefabProjetil;
-    public Rigidbody2D posicaobala;
     public float velocidadeProjetil = -3.0f;
 
 
@@ -27,7 +26,7 @@ public class PlayerBehavior : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Rigidbody2D projetil = Instantiate(prefabProjetil, jogadorRb.position, Quaternion.identity);
-            projetil.velocity = transform.up * velocidadeProjetil;
+            projetil.velocity = transform.up * -velocidadeProjetil;
         }
     }
 

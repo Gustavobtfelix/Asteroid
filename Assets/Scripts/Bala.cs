@@ -11,7 +11,8 @@ public class Bala : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
-        //    Instantiate(bala, PosicaoBala.transform.position, PosicaoBala.transform.rotation);
+            Instantiate(bala, Posicaobala.transform.position, Posicaobala.transform.rotation);
+            //projetil.velocity = transform.up * velocidadeProjetil;
         }
     }
 }

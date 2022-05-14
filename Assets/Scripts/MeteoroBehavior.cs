@@ -5,8 +5,10 @@ using UnityEngine;
 public class MeteoroBehavior : MonoBehaviour
 {
     public Rigidbody2D asteroidRB;
+    public MeteoroBehavior AsteroideMenor;
     public float velocidadeMaxima = 1.0f;
     public GameObject projetil;
+    public int quantidadeFragmentos = 3;
     void Start()
     {                               //gera (x, y) randomico
         Vector2 direcao = Random.insideUnitCircle;
@@ -19,5 +21,10 @@ public class MeteoroBehavior : MonoBehaviour
     {
         Destroy(gameObject);
         Destroy(projetil.gameObject);
+        
+        for(int i = 0; i < quantidadeFragmentos; i++)
+        {
+            Instantiate(AsteroideMenor, asteroidRB.position, Quaternion.identity);
+        }
     }
 }

@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1796078090
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1796078091}
-  m_Layer: 0
-  m_Name: PosicaoBala
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1796078091
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796078090}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9994097, w: -0.03435653}
-  m_LocalPosition: {x: 0, y: -1.35, z: 0}
-  m_LocalScale: {x: 1.1437166, y: 1.1437166, z: 1.143717}
-  m_Children: []
-  m_Father: {fileID: 3219018042449736248}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3219018042449736246
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,6 +13,7 @@ GameObject:
   - component: {fileID: 3219018042449736250}
   - component: {fileID: 3219018042449736251}
   - component: {fileID: 7285496886880863082}
+  - component: {fileID: 1536551501}
   m_Layer: 6
   m_Name: Jogador
   m_TagString: Untagged
@@ -61,7 +32,7 @@ Transform:
   m_LocalPosition: {x: 0.07, y: -1.56, z: 0}
   m_LocalScale: {x: 0.8743422, y: 0.8743422, z: 0.8743422}
   m_Children:
-  - {fileID: 1796078091}
+  - {fileID: 4898557613142902501}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -183.938}
@@ -183,3 +154,47 @@ MonoBehaviour:
   prefabProjetil: {fileID: 248401241060823548, guid: 64f8560773b6eec449f4954322784886, type: 3}
   posicaobala: {fileID: 0}
   velocidadeProjetil: 3
+--- !u!114 &1536551501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219018042449736246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c5852f08d7f22439deb77f52959b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bala: {fileID: 248401241060823549, guid: 64f8560773b6eec449f4954322784886, type: 3}
+  Posicaobala: {fileID: 3704660309537000113}
+--- !u!1 &3704660309537000113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4898557613142902501}
+  m_Layer: 0
+  m_Name: PosicaoBala
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4898557613142902501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704660309537000113}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.28, z: 0}
+  m_LocalScale: {x: 1.143717, y: 1.143717, z: 1.143717}
+  m_Children: []
+  m_Father: {fileID: 3219018042449736248}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
